@@ -60,7 +60,7 @@
 	            //set background image to first gif result for selected TV show
 	            $('#bgGifImg').stop().animate({opacity: 0.0}, 350, function(){
 	            	$(this)
-	            	.css({backgroundImage: 'url("'+results[0].images.original_still.url+'")'})
+	            	.css({background: 'url("'+results[0].images.original_still.url+'") no-repeat center center fixed'})
 	            	.animate({opacity: 1.0}, 850);
 	            });	            
 	        });	   			   		

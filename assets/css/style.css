@@ -17,6 +17,7 @@ body{
 	right: 0%; 
 	z-index: 5; 
 	max-width: 1400px;
+	transition: width 0.5s;
 }
 
 .mainSection{
@@ -28,6 +29,7 @@ body{
 	border-radius: 7px;
 	border: solid 1px #ccc;
 	overflow: auto;
+	transition: background-color 0.75s;
 }
 
 h3{
@@ -62,6 +64,7 @@ p{
     text-transform: uppercase;
     border-bottom: 1px solid #ccc;
     letter-spacing: 0.0925em;
+    transition: font-size 0.4s;
 }
 
 #btn_holder{
@@ -183,7 +186,77 @@ button:hover{
 #bgGifImg{
 	z-index: 2;
 	opacity: 0;
-	background-image: url();
-	background-repeat: no-repeat;	
-	background-size: cover;
+	background-image: url() no-repeat center center fixed; 	
+	background-size: cover !important;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 786px){
+
+	#container{ 
+		/*margin: 5% auto;*/
+		width: 90%; 
+	}
+
+	.mainSection{ 
+		background-color: rgba(165, 165, 228, 0.5); 
+	}	
+
+	#mainTitle{
+	    font-size: 2em;
+	    padding: 10px 0px;
+	}
+
+	h3{ 
+		width: 90%; 
+	}
+
+	p{
+		font-size: 14px;
+		line-height: 18px;
+	}	
+
+
+
+	#btn_holder{ 
+		/*margin: 25px 0px;*/
+	}
+
+	input{
+		/*padding: 5px 10px;*/
+	}
+
+	button{
+		position: relative;
+	    padding: 5px 10px;
+	    margin: 5px;
+	    letter-spacing: 0px;
+	    font-size:  11px;
+	}	
+
+}
+
+
+@media screen and (max-width: 480px){
+
+	.mainSection{ 
+		background-color: rgba(165, 165, 228, 0.35); 
+	}	
+
+	#mainTitle{
+	    font-size: 1.75em;
+	}	
+
+	input{
+		padding: 5px 5px;
+	}	
+
 }
