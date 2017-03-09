@@ -13,26 +13,34 @@
 <body>
 
 
-  <div id="container">
+  <div id="container"> 
 
-      <div id="innerContetn">
-
+      <div id="topContent" class="mainSection">
         <h1 id="mainTitle">TV Show Gifs!</h1>
         
         <div id="btn_holder"></div>
  
-        <form id="addFilter">
-          <label for="filter-input">Add a filter:</label>
-          <input type="text" id="filter-input"><br>
-          <input id="add-filter" type="submit" value="Add Filter">
-        </form>  
-
-        <div id="gifContent_holder"></div>
-
+        <form id="addFilter"> 
+          <input type="text" id="filter-input" placeholder="ENTER A SHOW TO ADD">
+          <input id="add-filter" type="submit" value="ADD SHOW">
+        </form>            
       </div>
 
+      <div id="bottomContent" class="mainSection">
+        <ul id="gifContent_holder">
+          <p id="initialNotice">
+            Click a button above to bring on the gifs!<br>
+            Add your own buttons for TV shows you love.
+          </p>
+        </ul>
+      </div>   
+
   </div>
-   
+  
+  <div id="bgHolder">
+    <img id="bgVignette" src="assets/images/bgVignette.png">
+    <div id="bgGifImg"></div>
+  </div>
 
   
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> 
